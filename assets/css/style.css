@@ -1,0 +1,62 @@
+body {
+	color: #333;
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+}
+a {
+	color: #009688;
+}
+
+#profilePic {
+    padding: 15px 0px;
+}
+
+main {
+	background: url(../../static/img/bg.png) repeat;
+	padding-left: 200px;
+}
+ul.sidenav {
+	width: 200px;
+}
+
+.page-title {
+    padding: 20px;
+}
+
+#logo-container {
+    background-color: #fafafa;
+    border-bottom: 1px solid #ddd;
+    min-height: 300px;
+}
+
+#logo-container h1 {
+    margin: 0px;
+    font-size: 1.25rem;
+}
+
+li.logo span {
+	display: block;
+	font-size: 14px;
+}
+
+#sideNav .sectNav>a {
+    padding: 0px;
+}
+
+#sideNav .sectNav>a:hover, #sideNav .sectNav>.active {
+    font-size: 1.5rem;
+}
+
+.sidenav li>a>i {
+    margin: 0px 20px 0px 10px;
+}
+
+#sideNav .sectNav>a:hover>i, #sideNav .sectNav>.active>i {
+    margin: 0px 35px 0px 10px;
+}
+
+.card-action a {
+    margin-right: 15px;
+}
+
+

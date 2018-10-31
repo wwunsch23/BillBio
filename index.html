@@ -1,35 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Bill's Bio</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-</head>
-<body>
-    <header>
-    <h1>Student Bio</h1>
-    </header>
-    
-    <div class="container">
-        <h2>Bill Wunsch</h2>
-        
-        <section id="main-bio">
-            <img id="bio-image" height=200px src="Sullivan Cotter and Associates Chicago Headshots-8_small.png">
-            <p>My name is Bill and I live in the Roscoe Village neighborhood in the great city of Chicago. I am married to my
-                lovely wife Lisa and have two dogs. I am currently learning to code so I can get a new job.</p>
-        </section>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Materialize - Compiled and minified CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Font Awesome Icon - CSS-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Oswald" rel="stylesheet">
+    <!-- Custom Styles-->
+    <link rel="stylesheet" href="./assets/css/style.css">
 
-        <section id="contact-info">
-            <h2>Contact Info</h2>
+    <title>Bill Wunsch | Full Stack Developer</title>
 
-            <ul>
-                <li><strong>Email:</strong> <a href="mailto:wwunsch@gmail.com">wwunsch@gmail.com</a></li>
-                <li><strong>Github:</strong> <a href="https://github.com/wwunsch23" target="_blank">wwunsch23</a></li>
-                <li><strong>Portfolio:</strong> <a href="#"> coming soon</a></li>
-            </ul>
-        </section>
-    </div>
-</body>
+  </head>
+  <body>
+    <!-- Navigation Menu-->
+    <!-- <nav class="hide-on-small-only"> -->
+    <ul id="sideNav" class="sidenav sidenav-fixed">
+        <li class="logo">
+            <a id="logo-container" aria-label="Navigate to the beginning of the page" href="#intro" class="brand-logo teal-text">
+                <img id="profilePic" class="circle responsive-img" src="./assets/images/headshot.png">
+                <h1>Bill Wunsch<span class="brown-text light">Full Stack Developer</span></h1>
+            </a>
+        </li> 
+
+        <li class="sectNav"><a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i class="fas fa-user-tie fa-2x"></i><span>About</span></a></li>
+        <li class="sectNav"><a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark indigo-text"><i class="fas fa-code fa-2x"></i><span>Projects</span></a></li>
+        <li class="sectNav"><a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark purple-text"><i class="fas fa-toolbox fa-2x"></i></i><span>Skills</span></a></li>
+        <li class="sectNav"><a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark brown-text"><i class="fas fa-envelope fa-2x"></i></i><span>Contact</span></a></li>
+    </ul>
+    <a href="#" data-target="sideNav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    <!-- </nav> -->
+    <!-- <nav class="hide-on-large-only trigger z-depth-1">
+        <a aria-label="Toggle visibility of the mobile navbar" href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+        <div class="name-title">
+            <a id="name" aria-label="Navigate to the beginning of the page" href="#main" class="teal-text">Andrew Borstein</a><span class="brown-text light">Full Stack Developer</span></div>
+    </nav>
+    <nav class="hide-on-large-only">
+      <ul id="slide-out" class="side-nav">
+        <li class="bold"><a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i class="fas fa-user-tie"></i><span>About</span></a></li>
+        <li class="bold"><a aria-label="Navigate to the Experience section" href="#experience" class="waves-effect waves-dark cyan-text"><i class="mdi-action-trending-up small"></i><span>Experience</span></a></li>
+        <li class="bold"><a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark indigo-text"><i class="mdi-av-web small"></i><span>Projects</span></a></li>
+        <li class="bold"><a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark purple-text"><i class="mdi-av-equalizer small"></i><span>Skills</span></a></li>
+        <li class="bold"><a aria-label="Navigate to the Awards section" href="#awards" class="waves-effect waves-dark red-text"><i class="mdi-action-grade small"></i><span>Awards</span></a></li>
+        <li class="bold"><a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark orange-text"><i class="mdi-social-school small"></i><span>Education</span></a></li>
+        <li class="bold"><a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark brown-text"><i class="mdi-content-mail small"></i><span>Contact</span></a></li>
+        <li class="bold"><a aria-label="Open Andrew's Resume in a new tab" href="https://docs.google.com/document/d/1evlvmAcOmPTttl1isyX_UcQbLO5pK8OwB4Rs2Sv4riY" target="_blank" class="waves-effect waves-dark grey-text text-darken-3"><i class="mdi-action-description small"></i><span>Resume</span></a></li>
+      </ul>
+    </nav> -->
+    <!-- Main Content-->
+    <main>
+      <section id="intro" class="section scrollspy full-height">
+        <!-- <div class="overlay"></div> -->
+        <div class="container">
+          <h2>I want to <span class="teal">create applications</span><br>that <span class="underline">help make the world a better place</span>.</h2>
+        </div>
+      </section>
+      <section id="about" class="section scrollspy">
+        <h3 class="page-title white-text teal">About</h3>
+        <div class="container flow-text">
+          <p>Some text about why I want to be a web developer</p>
+          <p>Some additional text about me.</p>
+        </div>
+      </section>
+
+      <section id="projects" class="section scrollspy">
+      <h3 class="page-title white-text teal">Projects</h3>
+      <div class="container">
+          <div class="row">
+            <div class="col s12 m6">
+              <div class="card small">
+                  <div class="card-image waves-effect waves-block waves-light">
+                    <img alt="Screenshot of Trivia Game" src="./assets/images/TriviaGame2.PNG" class="activator">
+                </div>
+                <div class="card-content"><span class="card-title activator teal-text hoverline">Computer Trivia Quiz<i class="material-icons right">arrow_drop_up</i></span>
+                  <p>General Computer Knowledge Trivia Quiz</p>
+                </div>
+                <div class="card-reveal"><span class="card-title brown-text">Main Skills Used<i class="material-icons right">close</i></span>
+                <ul>
+                  <li>Dynamically generate elements with Javascript</li>
+                  <li>Use setInterval to create quiz timer</li>
+                </ul>
+                <div class="card-action"><a aria-label="Play Trivia Quiz" href="https://wwunsch23.github.io/TriviaGame/" target="_blank" data-position="top" data-tooltip="View Online" class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i class="fas fa-external-link-alt"></i></a><a aria-label="Visit the GitHub repo for Computer Trivia Quiz project" href="https://github.com/wwunsch23/TriviaGame" target="_blank" data-position="top" data-tooltip="View Source" class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i class="fab fa-github"></i></a></div>
+                </div>
+              </div>
+            </div>
+            <div class="col s12 m6">
+                <div class="card small">
+                    <div class="card-image waves-effect waves-block waves-light">
+                      <img alt="Screenshot of Trivia Game" src="./assets/images/TVGifsFinder2.PNG" class="activator">
+                  </div>
+                  <div class="card-content"><span class="card-title activator teal-text hoverline">TV Show Gif Finder<i class="material-icons right">arrow_drop_up</i></span>
+                    <p>Fun app to find and save TV show gifs</p>
+                  </div>
+                  <div class="card-reveal"><span class="card-title brown-text">Main Skills Used<i class="material-icons right">close</i></span>
+                  <ul>
+                    <li>Make requests to Giphy API using AJAX</li>
+                    <li>Dynamically generate elements with Javascript</li>
+                    <li>Used setInterval to create quiz timer</li>
+                  </ul>
+                  <div class="card-action"><a aria-label="TV Show Gif Finder App" href="https://wwunsch23.github.io/TV_Show_Giphy_App/" target="_blank" data-position="top" data-tooltip="View Online" class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i class="fas fa-external-link-alt"></i></a><a aria-label="GitHub repo for TV Show Gif Finder project" href="https://github.com/wwunsch23/TV_Show_Giphy_App" target="_blank" data-position="top" data-tooltip="View Source" class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i class="fab fa-github"></i></a></div>
+                  </div>
+                </div>
+            </div>
+            <div class="col s12 m6">
+              <div class="card small">
+                  <div class="card-image waves-effect waves-block waves-light">
+                    <img alt="Screenshot of Trivia Game" src="./assets/images/FootballHangman.jpg" class="activator">
+                </div>
+                <div class="card-content"><span class="card-title activator teal-text hoverline">College Football Hangman<i class="material-icons right">arrow_drop_up</i></span>
+                  <p>Exciting hangman game where you guess the name of a College football team</p>
+                </div>
+                <div class="card-reveal"><span class="card-title brown-text">Main Skills Used<i class="material-icons right">close</i></span>
+                <ul>
+                  <li>Various array methods</li>
+                  <li>Dynamically display image and play music</li>
+                </ul>
+                <div class="card-action"><a aria-label="College Football Hangman Game" href="https://wwunsch23.github.io/TV_Show_Giphy_App/" target="_blank" data-position="top" data-tooltip="View Online" class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i class="fas fa-external-link-alt"></i></a><a aria-label="GitHub repo for TV Show Gif Finder project" href="https://github.com/wwunsch23/TV_Show_Giphy_App" target="_blank" data-position="top" data-tooltip="View Source" class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i class="fab fa-github"></i></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>  
+      </section>
+
+      <section id="skills" class="section scrollspy">
+        <h3 class="page-title white-text teal">Skills</h3>
+        <div class="container">
+            <div class="card">
+                <div class="card-content">
+                  <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                </div>
+                <div class="card-tabs">
+                  <ul class="tabs tabs-fixed-width">
+                    <li class="tab"><a href="#html">HTML</a></li>
+                    <li class="tab"><a href="#css">CSS</a></li>
+                    <li class="tab"><a href="#javascript">Javascript</a></li>
+                    <li class="tab"><a href="#backend">Back-End</a></li>
+                    <li class="tab"><a href="#backend">Other</a></li>
+                  </ul>
+                </div>
+                <div class="card-content grey lighten-4">
+                  <div id="html">
+                    <div class="row center-align">
+                      <div class="col s4 m2"><img alt="" src="./assets/images/html5.png" class="responsive-img">HTML5</div>
+                    </div>
+                  </div>                    
+                  <div id="css">
+                    <div class="row center-align">
+                        <div class="col s4 m2"><img alt="" src="./assets/images/css3.png" class="responsive-img">CSS3</div>
+                        <div class="col s4 m2"><img alt="" src="./assets/images/bootstrap.png" class="responsive-img">Bootstrap</div>
+                        <div class="col s4 m2"><img alt="" src="./assets/images/materialize.png" class="responsive-img">Materialize</div>
+                    </div>
+                  </div>
+                  <div id="javascript">
+                    <div class="row center-align">
+                        <div class="col s4 m2"><img alt="" src="./assets/images/javascript.png" class="responsive-img">Javascript</div>
+                        <div class="col s4 m2"><img alt="" src="./assets/images/jQuery.jpg" class="responsive-img">jQuery</div>
+                        <div class="col s4 m2"><img alt="" src="./assets/images/nodejs.png" class="responsive-img">Node.js</div>
+                        <div class="col s4 m2"><img alt="" src="./assets/images/react.png" class="responsive-img">React</div>
+                        <div class="col s4 m2"><img alt="" src="./assets/images/express.png" class="responsive-img">express</div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+      </section>
+      <section id="contact" class="section scrollspy full-height">
+        <h3 class="page-title white-text teal">Contact</h3>
+        <div class="container">
+          <p><a aria-label="Email Bill" href="mailto:wwunsch@gmail.com" data-position="top" data-tooltip="Email Bill" class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i class="fa fa-envelope"></i><a alt="" href="mailto:wwunsch@gmail.com" class="hoverline">wwunsch@gmail.com</a></p>
+          <p><a aria-label="Bill's GitHub" href="http://github.com/wwunsch23" target="_blank" data-position="top" data-tooltip="View Bill's GitHub Page" class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i class="fa fa-github"></i><a alt="" href="http://github.com/wwunsch23" class="hoverline">github.com/wwunsch23</a></a></p>
+          <p><a aria-label="Bill's LinkedIn" href="https://www.linkedin.com/in/bill-wunsch/" target="_blank" data-position="top" data-tooltip="View Bill on LinkedIn" class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i class="fa fa-linkedin"></i><a alt="" href="https://www.linkedin.com/in/bill-wunsch/" class="hoverline">linkedin.com/in/bill-wunsch</a></a></p>
+        </div>
+      </section>
+    </main> -->
+    <!-- jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Materialize - Compiled and minified JavaScript-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="assets/javascript/portfolio.js"></script>
+  </body>
 </html>
