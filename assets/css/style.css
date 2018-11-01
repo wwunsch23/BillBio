@@ -55,8 +55,10 @@ li.logo span {
     margin: 0px 35px 0px 10px;
 }
 
-.card-action a {
+.card-action a, p a {
     margin-right: 15px;
 }
 
-
+/* .indicator {
+    background-color: brown !important;
+} */
