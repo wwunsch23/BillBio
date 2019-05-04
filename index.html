@@ -25,7 +25,7 @@
   <ul id="sideNav" class="sidenav sidenav-fixed hide-on-small-only">
     <li class="logo">
       <a id="logo-container" aria-label="Navigate to the beginning of the page" href="#intro" class="brand-logo teal-text">
-        <img id="profilePic" class="circle responsive-img" src="./assets/images/headshot.png">
+        <img id="profilePic" class="circle responsive-img" src="./assets/images/headshot_square.png">
         <h1>Bill Wunsch<span class="brown-text light">Full Stack Developer</span></h1>
       </a>
     </li>
@@ -53,10 +53,8 @@
         <li class="bold"><a aria-label="Navigate to the Experience section" href="#experience" class="waves-effect waves-dark cyan-text"><i class="mdi-action-trending-up small"></i><span>Experience</span></a></li>
         <li class="bold"><a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark indigo-text"><i class="mdi-av-web small"></i><span>Projects</span></a></li>
         <li class="bold"><a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark purple-text"><i class="mdi-av-equalizer small"></i><span>Skills</span></a></li>
-        <li class="bold"><a aria-label="Navigate to the Awards section" href="#awards" class="waves-effect waves-dark red-text"><i class="mdi-action-grade small"></i><span>Awards</span></a></li>
         <li class="bold"><a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark orange-text"><i class="mdi-social-school small"></i><span>Education</span></a></li>
         <li class="bold"><a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark brown-text"><i class="mdi-content-mail small"></i><span>Contact</span></a></li>
-        <li class="bold"><a aria-label="Open Andrew's Resume in a new tab" href="https://docs.google.com/document/d/1evlvmAcOmPTttl1isyX_UcQbLO5pK8OwB4Rs2Sv4riY" target="_blank" class="waves-effect waves-dark grey-text text-darken-3"><i class="mdi-action-description small"></i><span>Resume</span></a></li>
       </ul>
     </nav> -->
   <!-- Main Content-->
@@ -64,15 +62,14 @@
     <section id="intro" class="section scrollspy">
       <!-- <div class="overlay"></div> -->
       <div class="container">
-        <h2>I want to <span class="teal">create applications</span><br>that <span class="underline">help make the
-            world a better place</span>.</h2>
+        <h2>Web developer with a passion for creating applications that help individuals work and play better.</h2>
       </div>
     </section>
     <section id="about" class="section scrollspy">
       <h3 class="page-title white-text teal">About</h3>
       <div class="container flow-text">
-        <p>Some text about why I want to be a web developer</p>
-        <p>Some additional text about me.</p>
+        <p>I am a web developer with a background in data management. I enjoy finding unique solutions to a variety of challenges.</p>
+        <p>I recently completed a six month full stack web development bootcamp and I'm excited to use my newly accquired skills to building web applications that have a meaningful, positive impact on individuals. I am eager to more fully develop these skills while utilizing my exceptional ability to problem solve and think critically.</p>
       </div>
     </section>
 
@@ -81,9 +78,31 @@
       <div class="container">
         <div class="row">
           <div class="col s12 m6">
+              <div class="card small">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img alt="Screenshot of Memory Game" src="./assets/images/MemoryGame.png" class="activator">
+                </div>
+                <div class="card-content"><span class="card-title activator teal-text hoverline">Memory Card Game<i
+                      class="material-icons right">arrow_drop_up</i></span>
+                  <p>Game to test your memory</p>
+                </div>
+                <div class="card-reveal"><span class="card-title brown-text">Main Skills Used<i class="material-icons right">close</i></span>
+                  <ul>
+                    <li>Built in React</li>
+                    <li>Uses JSON to dynamically populate the playing cards</li>
+                  </ul>
+                  <div class="card-action"><a aria-label="Play Memory Game" href="https://wwunsch23.github.io/MemoryGame/"
+                      target="_blank" data-position="top" data-tooltip="View Online" class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i
+                        class="fas fa-external-link-alt"></i></a><a aria-label="Visit the GitHub repo for Memory Game project"
+                      href="https://github.com/wwunsch23/MemoryGame" target="_blank" data-position="top" data-tooltip="View Source"
+                      class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i class="fab fa-github"></i></a></div>
+                </div>
+              </div>
+          </div>
+          <div class="col s12 m6">
             <div class="card small">
               <div class="card-image waves-effect waves-block waves-light">
-                <img alt="Screenshot of Trivia Game" src="./assets/images/TriviaGame2.PNG" class="activator">
+                <img alt="Screenshot of Trivia Game" src="./assets/images/TriviaGame2.png" class="activator">
               </div>
               <div class="card-content"><span class="card-title activator teal-text hoverline">Computer Trivia Quiz<i
                     class="material-icons right">arrow_drop_up</i></span>
@@ -186,14 +205,14 @@
             <div id="javascript">
               <div class="row center-align">
                 <div class="col s4 m2"><img alt="" src="./assets/images/javascript.png" class="responsive-img">Javascript</div>
-                <div class="col s4 m2"><img alt="" src="./assets/images/jQuery.jpg" class="responsive-img">jQuery</div>
-                <div class="col s4 m2"><img alt="" src="./assets/images/nodejs.png" class="responsive-img">Node.js</div>
+                <div class="col s4 m2"><img alt="" src="./assets/images/logo-jquery-png--250.png" class="responsive-img">jQuery</div>
                 <div class="col s4 m2"><img alt="" src="./assets/images/react.png" class="responsive-img">React</div>
               </div>
             </div>
             <div id="backend">
               <div class="row center-align">
-                <div class="col s4 m2"><img alt="" src="./assets/images/express.png" class="responsive-img">express</div>
+                <div class="col s4 m2"><img alt="" src="./assets/images/nodejs.png" class="responsive-img">Node.js</div>
+                <div class="col s4 m2"><img alt="" src="./assets/images/express_js.png" class="responsive-img">Express</div>
               </div>
             </div>
             <div id="other">
@@ -221,7 +240,11 @@
               class="fab fa-linkedin-in"></i><a alt="" href="https://www.linkedin.com/in/bill-wunsch/" class="hoverline">linkedin.com/in/bill-wunsch</a></a></p>
       </div>
     </section>
-  </main> -->
+    <section id="footer" class="section scrollspy">
+      <div class="footer-text">
+      </div>
+    </section>
+  </main>
   <!-- jQuery-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <!-- Materialize - Compiled and minified JavaScript-->
